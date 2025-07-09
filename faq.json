@@ -1,0 +1,39 @@
+[
+  {
+    "question": "How to post a product?",
+    "answer": "Login as a seller and click 'Sell Product'."
+  },
+  {
+    "question": "How to contact a seller?",
+    "answer": "Click on the product and use the 'Chat' option."
+  },
+  {
+    "question": "Is there a fee to list items?",
+    "answer": "No, listing is free for all users."
+  },
+  {
+    "question": "How to delete a product?",
+    "answer": "Go to 'My Products' and click delete."
+  },
+  {
+    "question": "How to edit a product?",
+    "answer": "Click on your product and choose edit."
+  },
+  { "question": "Can buyers negotiate price?", "answer": "Yes, through chat." },
+  {
+    "question": "How to reset my password?",
+    "answer": "Click on 'Forgot Password' on login page."
+  },
+  {
+    "question": "How to mark a product as sold?",
+    "answer": "Edit your product and choose 'Mark as Sold'."
+  },
+  {
+    "question": "Can I sell used items?",
+    "answer": "Yes, both new and used items can be listed."
+  },
+  {
+    "question": "How to update my profile?",
+    "answer": "Go to settings and update your info."
+  }
+]

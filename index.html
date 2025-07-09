@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OLX Bootstrap Clone - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="header"></div>
+    <!-- Hero -->
+    <div class="container my-5 p-2">
+        <!-- Add AOS animation CSS in <head> -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+        <div class="bg-light py-5 text-center">
+            <div class="container">
+                <!-- Hero Text -->
+                <h1 class="display-5 fw-bold mb-3" data-aos="fade-up">Welcome to <span
+                        class="text-primary">ApnaBazaar</span></h1>
+                <p class="lead mb-5" data-aos="fade-up" data-aos-delay="100">Buy and Sell Products Easily</p>
+
+                <!-- Feature Icons -->
+                <div class="row g-4 justify-content-center">
+                    <div class="col-sm-6 col-md-3" data-aos="zoom-in">
+                        <div class="p-4 shadow-sm rounded bg-white">
+                            <i class="bi bi-bag-check-fill fs-1 text-success mb-3"></i>
+                            <h6 class="fw-semibold">Verified Listings</h6>
+                            <p class="small text-muted">Each product is quality-checked before being listed.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="p-4 shadow-sm rounded bg-white">
+                            <i class="bi bi-cash-coin fs-1 text-warning mb-3"></i>
+                            <h6 class="fw-semibold">Best Deals</h6>
+                            <p class="small text-muted">Save more with trusted sellers near you.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="p-4 shadow-sm rounded bg-white">
+                            <i class="bi bi-geo-alt-fill fs-1 text-danger mb-3"></i>
+                            <h6 class="fw-semibold">Location Based</h6>
+                            <p class="small text-muted">Find nearby products in your city or locality.</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="p-4 shadow-sm rounded bg-white">
+                            <i class="bi bi-shield-lock-fill fs-1 text-primary mb-3"></i>
+                            <h6 class="fw-semibold">Secure Transactions</h6>
+                            <p class="small text-muted">End-to-end privacy and chat with sellers securely.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <div class="row mt-4">
+            <div class="col-md-4 mb-3">
+                <div class="card h-100 border-0 shadow-sm">
+                    <a class="text-decoration-none " href="Products.html">
+
+
+                        <div class="card-body text-center text-dark">
+                            <i class="bi bi-phone fs-2 text-primary mb-2"></i>
+                            <h5 class="card-title">Mobiles</h5>
+                            <p class="card-text">Find great deals on the latest smartphones.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card h-100 border-0 shadow-sm">
+                    <a class="text-decoration-none " href="Products.html">
+
+                        <div class="card-body text-center text-dark">
+                            <i class="bi bi-laptop fs-2 text-primary mb-2"></i>
+                            <h5 class="card-title">Laptops</h5>
+                            <p class="card-text">Browse laptops for work, study, or gaming.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card h-100 border-0 shadow-sm">
+                    <a class="text-decoration-none " href="Products.html">
+
+                        <div class="card-body text-center text-dark">
+                            <i class="bi bi-house-door fs-2 text-primary mb-2"></i>
+                            <h5 class="card-title">Home Appliances</h5>
+                            <p class="card-text">Upgrade your home with the best deals.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Products -->
+        <h2 class="mt-5 mb-3">Featured Products</h2>
+        <div id="featured" class="row g-4"></div>
+    </div>
+
+    <section class="container my-5">
+        <h2 class="mb-4"><i class="bi bi-question-circle me-2"></i>FAQs</h2>
+
+        <input type="text" id="faqSearch" class="form-control mb-4" placeholder="Search FAQs..." />
+
+        <div id="faqList" class="accordion"></div>
+    </section>
+
+
+
+    <div id="modals"></div>
+    <div id="footer"></div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
