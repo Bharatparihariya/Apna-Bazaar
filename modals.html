@@ -1,48 +1,134 @@
 <!-- modals.html -->
 <!-- Login Modal -->
+<!-- Login Modal -->
 <div class="modal fade" id="loginModal" tabindex="-1">
-    <div class="modal-dialog">
-        <div class="modal-content p-3">
-            <h5 class="modal-title mb-3">Login</h5>
-            <form id="loginForm">
-                <div class="mb-2">
-                    <label>Username</label>
-                    <input type="text" class="form-control" id="loginUsername" required>
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4 shadow-sm border-0">
+
+            <!-- Modal Header -->
+            <div class="modal-header border-0 pb-0">
+                <h5 class="modal-title fw-semibold text-primary">
+                    <i class="bi bi-box-arrow-in-right me-2"></i> Login to Your Account
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="modal-body pt-2">
+                <form id="loginForm">
+                    <!-- Username with icon -->
+                    <div class="mb-3">
+                        <label for="loginUsername" class="form-label fw-medium">Username</label>
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-text bg-white border-end-0">
+                                <i class="bi bi-person-fill text-secondary"></i>
+                            </span>
+                            <input type="text" class="form-control rounded-start-0" id="loginUsername"
+                                placeholder="Enter your username" required>
+                        </div>
+                    </div>
+
+                    <!-- Password with icon -->
+                    <div class="mb-3">
+                        <label for="loginPassword" class="form-label fw-medium">Password</label>
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-text bg-white border-end-0">
+                                <i class="bi bi-lock-fill text-secondary"></i>
+                            </span>
+                            <input type="password" class="form-control rounded-start-0" id="loginPassword"
+                                placeholder="Enter your password" required>
+                        </div>
+                    </div>
+
+                    <!-- Login Button -->
+                    <button type="submit" class="btn bg-purple text-white w-100 py-2 rounded-3 mt-1">
+                        <i class="bi bi-unlock-fill me-1"></i> Login
+                    </button>
+                </form>
+
+                <!-- Optional: Forgot password or Sign up links -->
+                <div class="text-center mt-3 small">
+                    <a href="#" class="text-decoration-none text-secondary">Forgot password?</a>
+                    <span class="mx-2">|</span>
+                    <a data-bs-toggle="modal" data-bs-target="#signupModal" href="#"
+                        class="text-decoration-none text-primary">Sign Up</a>
                 </div>
-                <div class="mb-2">
-                    <label>Password</label>
-                    <input type="password" class="form-control" id="loginPassword" required>
-                </div>
-                <button type="submit" class="btn btn-outline-purple w-100 mt-2">Login</button>
-            </form>
+            </div>
         </div>
     </div>
 </div>
 
-<!-- Signup Modal -->
+
+
+<!-- Sign Up Modal -->
 <div class="modal fade" id="signupModal" tabindex="-1">
-    <div class="modal-dialog">
-        <div class="modal-content p-3">
-            <h5 class="modal-title mb-3">Sign Up</h5>
-            <form id="signupForm">
-                <div class="mb-2">
-                    <label>Username</label>
-                    <input type="text" class="form-control" id="signupUsername" required>
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content rounded-4 shadow-sm border-0">
+
+            <!-- Modal Header -->
+            <div class="modal-header border-0 pb-0">
+                <h5 class="modal-title fw-semibold text-primary">
+                    <i class="bi bi-person-plus-fill me-2"></i> Create Your Account
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <!-- Modal Body -->
+            <div class="modal-body pt-2">
+                <form id="signupForm">
+
+                    <!-- Username with icon -->
+                    <div class="mb-3">
+                        <label for="signupUsername" class="form-label fw-medium">Username</label>
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-text bg-white border-end-0">
+                                <i class="bi bi-person-fill text-secondary"></i>
+                            </span>
+                            <input type="text" class="form-control rounded-start-0" id="signupUsername"
+                                placeholder="Choose a username" required>
+                        </div>
+                    </div>
+
+                    <!-- Password with icon -->
+                    <div class="mb-3">
+                        <label for="signupPassword" class="form-label fw-medium">Password</label>
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-text bg-white border-end-0">
+                                <i class="bi bi-lock-fill text-secondary"></i>
+                            </span>
+                            <input type="password" class="form-control rounded-start-0" id="signupPassword"
+                                placeholder="Create a strong password" required>
+                        </div>
+                    </div>
+
+                    <!-- Role Selection with icon -->
+                    <div class="mb-3">
+                        <label for="signupRole" class="form-label fw-medium">Select Role</label>
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-text bg-white border-end-0">
+                                <i class="bi bi-person-badge-fill text-secondary"></i>
+                            </span>
+                            <select class="form-select rounded-start-0" id="signupRole" required>
+                                <option value="" disabled selected>Select Role</option>
+                                <option value="buyer">Buyer</option>
+                                <option value="seller">Seller</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Sign Up Button -->
+                    <button type="submit" class="btn bg-purple text-white w-100 py-2 rounded-3 mt-1">
+                        <i class="bi bi-person-check-fill me-1"></i> Sign Up
+                    </button>
+                </form>
+
+                <!-- Login Link -->
+                <div class="text-center mt-3 small">
+                    Already have an account?
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal"
+                        class="text-primary text-decoration-none">Log In</a>
                 </div>
-                <div class="mb-2">
-                    <label>Password</label>
-                    <input type="password" class="form-control" id="signupPassword" required>
-                </div>
-                <div class="mb-2">
-                    <label>Role</label>
-                    <select class="form-select" id="signupRole" required>
-                        <option value="">Select Role</option>
-                        <option value="buyer">Buyer</option>
-                        <option value="seller">Seller</option>
-                    </select>
-                </div>
-                <button type="submit" class="btn btn-outline-purple w-100 mt-2">Sign Up</button>
-            </form>
+            </div>
         </div>
     </div>
 </div>

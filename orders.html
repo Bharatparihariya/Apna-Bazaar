@@ -15,22 +15,24 @@
     <!-- Header -->
     <div id="header"></div>
 
-    <div class="container py-5">
-        <!-- Page Header -->
-        <div class="d-flex justify-content-between align-items-center mb-4" id="ordersHeader">
-            <div class="d-flex align-items-center gap-2 mt-5">
-                <i id="ordersIcon" class="bi bi-bag-check-fill fs-3 text-primary"></i>
-                <h3 id="ordersTitle" class="mb-0">My Orders</h3>
+    <main class="flex-grow-1">
+        <div class="container py-5">
+            <!-- Page Header -->
+            <div class="d-flex justify-content-between align-items-center mb-4" id="ordersHeader">
+                <div class="d-flex align-items-center gap-2 mt-5">
+                    <i id="ordersIcon" class="bi bi-bag-check-fill fs-3 text-primary"></i>
+                    <h3 id="ordersTitle" class="mb-0"> Orders Details</h3>
+                </div>
+                <span id="ordersBadge" class="badge bg-light text-dark fw-medium">
+                    🛒 Track your purchases
+                </span>
             </div>
-            <span id="ordersBadge" class="badge bg-light text-dark fw-medium">
-                🛒 Track your purchases
-            </span>
+
+
+            <!-- Orders Container -->
+            <div id="ordersContainer"></div>
         </div>
-
-
-        <!-- Orders Container -->
-        <div id="ordersContainer"></div>
-    </div>
+    </main>
 
 
     <div id="modals"></div>

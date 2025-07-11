@@ -10,6 +10,21 @@
     --button-hover: #E65100;
 }
 
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    /* Push footer to bottom */
+}
+
 body,
 html {
     margin: 0;
@@ -19,13 +34,8 @@ html {
     color: var(--text-color);
 }
 
-/* Header styling */
-header {
-    background-color: var(--primary-color);
-}
-
 header .navbar {
-    background-color: var(--primary-color);
+    background: linear-gradient(to right, #6a11cb, #9333ea);
 }
 
 header .navbar-brand,
@@ -48,7 +58,7 @@ header .form-control {
 }
 
 .site-footer {
-    background-color: var(--primary-color);
+    background: linear-gradient(to right, #6a11cb, #9333ea);
     /* Deep purple background */
     color: #fff;
     /* White text */
@@ -83,33 +93,20 @@ header .form-control {
 
 .site-footer .footer-links a:hover {
     color: var(--accent-color);
-    /* Accent color on hover */
 }
 
 .bg-purple {
-    background-color: #6f42c1 !important;
-    /* Bootstrap's purple-600 */
+    background: var(--primary-color) !important;
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #5a32a3 !important;
-    /* darker shade when expanded */
-    color: #fff;
-}
-
-.accordion-button {
-    background-color: #6f42c1 !important;
-    color: white !important;
-    box-shadow: none;
-}
-
-.accordion-item {
-    background-color: #6f42c1 !important;
-    border: none;
+    background-color: #F5F5F5 !important;
+    color: var(--primary-color);
 }
 
 .accordion-body {
-    background-color: #6f42c1 !important;
+    background-color: #F5F5F5 !important;
+    color: var(--text-color) !important;
 }
 
 .site-footer .social-icons a {
@@ -117,7 +114,7 @@ header .form-control {
     align-items: center;
     justify-content: center;
     margin-right: 0.5rem;
-    color: #ddd;
+    color: white;
     font-size: 1.2rem;
     transition: color 0.3s ease, transform 0.3s ease;
 }
@@ -183,13 +180,13 @@ header .form-control {
 }
 
 .btn-outline-purple:hover {
-    color: #fff;
+    color: var(--background-color);
     background-color: var(--primary-color);
 }
 
 .text-primary,
 .page-link {
-    color: #4A148C !important;
+    color: var(--primary-color) !important;
 }
 
 .active>.page-link {
@@ -198,12 +195,8 @@ header .form-control {
     border-color: var(--primary-color);
 }
 
-.wishlist-btn:hover i {
-    color: #c82333;
-}
-
 .form-select {
-    color: #4A148C;
+    color: var(--primary-color);
 }
 
 .card-img-top {
@@ -263,4 +256,118 @@ header .form-control {
     50% {
         transform: translateY(-10px);
     }
+}
+
+.bg-purple {
+    background-color: var(--primary-color) !important;
+}
+
+.modal-header .fw-bold {
+    font-size: 16px;
+}
+
+.modal-header small {
+    font-size: 12px;
+    opacity: 0.85;
+}
+
+.openMiniChat.active {
+    background-color: #e9ecef;
+    border-radius: 8px;
+}
+
+.chatmodak {
+    height: 70vh;
+}
+
+.chatmodak .modal-body {
+    flex: 1 1 auto;
+    overflow: hidden;
+}
+
+#buyerListView,
+#chatView {
+    height: 100%;
+    overflow-y: auto;
+}
+
+#miniChatBody {
+    height: 100%;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+
+@media (max-width: 767px) {
+    .modal-header {
+        padding: 8px 12px !important;
+    }
+
+    @media (max-width: 767px) {
+        .chatmodak {
+            height: 45vh !important;
+        }
+    }
+
+    #buyerAvatar {
+        width: 32px !important;
+        height: 32px !important;
+    }
+
+    #activeBuyerName {
+        font-size: 14px;
+    }
+
+    #buyerStatus {
+        font-size: 11px;
+    }
+
+    .modal-header .btn-close {
+        transform: scale(0.85);
+    }
+}
+
+.nav-item-hover {
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    ;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-item-hover:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* semi-transparent white */
+    color: #ffffff;
+
+}
+
+#logoutBtnMobile a:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 5px;
+    padding: 4px 8px;
+    transition: 0.3s;
+}
+
+.dropdown-menu .dropdown-item:active,
+.dropdown-menu .dropdown-item:focus {
+    background-color: rgba(0, 0, 0, 0.05) !important;
+    color: inherit;
+}
+
+.text-primary {
+    color: linear-gradient(to right, #6a11cb, #9333ea);
+}
+
+.bg-purple:hover {
+    background-color: #5a34a1 !important;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #6f42c1 !important;
+    /* Slightly richer purple */
+    box-shadow: 0 0 0 0.25rem rgba(111, 66, 193, 0.25) !important;
+    outline: none;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
